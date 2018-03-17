@@ -7,26 +7,24 @@ import { Close } from '../outlines'
 
 
 export const ModalWrapper = styled.div`
-
+  padding: 0 4rem;
   display: flex;
+  align-items: center;
   min-height: 100%;
-  overflow: auto;
-  width: auto;
   z-index: 130;
 `
 
 export const ModalContent = styled.div`
-  padding: 0 40px;
   margin: auto;
-  align-items: center;
-  max-width: 935px;
   width: 100%;
-  color: #fff;
+  max-width: 935rem;
 `
+
 export const ModalButton = styled.div`
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 0.4rem;
+  right: 0.4rem;
+  cursor: pointer;
 `
 
 export const Modal = ({ onClose, children }) => (
